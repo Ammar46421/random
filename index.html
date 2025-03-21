@@ -1,40 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DesignX</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"
+      type=""
+    ></script>
     <script type="module" src="/main.js"></script>
-    <link href="./style.css" rel="stylesheet">
-</head>
-<body class="bg-gradient-to-r from-blue-500 to-purple-500 text-white">
-    
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body class="bg-gradient-to-r from-blue-500 to-blue-700 text-white">
     <!-- Navbar -->
     <nav class="flex justify-between items-center p-5 bg-black/40 shadow-lg">
-        <h1 class="text-2xl font-bold">DesignX</h1>
-        <ul class="flex space-x-6">
-            <li><a href="#" class="hover:text-yellow-300">Home</a></li>
-            <li><a href="#" class="hover:text-yellow-300">About Us</a></li>
-            <li><a href="#" class="hover:text-yellow-300">Login</a></li>
-        </ul>
+      <h1 class="text-2xl font-bold">E-Commerce</h1>
+      <ul class="flex space-x-6">
+        <li><a href="#" class="hover:text-yellow-300">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-300">About Us</a></li>
+        <li><a href="#" class="hover:text-yellow-300">Login</a></li>
+      </ul>
     </nav>
 
     <!-- Hero Section -->
     <section class="flex flex-col md:flex-row items-center justify-center p-10">
-        <div class="w-full md:w-1/2 p-5">
-            <h2 class="text-4xl font-bold mb-3">Welcome to DesignX</h2>
-            <p class="text-lg">We provide the best modern designs and products to enhance your lifestyle.</p>
-        </div>
-        <div class="w-full md:w-1/2 p-5">
-            <img src="https://source.unsplash.com/600x400/?design,technology" alt="Design Image" class="rounded-lg shadow-lg">
-        </div>
+      <div class="w-full md:w-1/2 p-5">
+        <h2 class="text-4xl font-bold mb-3">Welcome to E-Commerce</h2>
+        <p class="text-lg">
+          "We provide the best modern designs and high-quality products to
+          enhance your lifestyle, bringing innovation, elegance, and
+          functionality together. Our goal is to transform your everyday
+          experiences with stylish and cutting-edge solutions."
+        </p>
+      </div>
+      <div class="w-full md:w-1/2 p-5 justify-center">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHN4cN5Xx1n5xCXrMAybL_o8Wq5fE6D-JNwA&s"
+          alt="Design Image"
+          class="w-full md:w-3/4 lg:w-2/3 max-w-200% md:max-w-md lg:max-w-lg rounded-lg shadow-lg"
+        />
+      </div>
     </section>
 
     <!-- Product Section -->
     <section class="p-10">
-        <h2 class="text-3xl font-bold text-center mb-6">Our Products</h2>
-        <div id="product-list" class="grid grid-cols-1 md:grid-cols-3 gap-6"></div>
+      <h2 class="text-3xl font-bold text-center mb-6">Our Products</h2>
+      <div
+        id="product-list"
+        class="grid grid-cols-1 md:grid-cols-3 gap-6"
+      ></div>
     </section>
 
-</body>
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <!-- Left: Logo & Description -->
+            <div class="mb-6 md:mb-0">
+                <h2 class="text-2xl font-bold">DesignX</h2>
+                <p class="text-gray-400 text-sm mt-2">Creating stunning designs with innovation & technology.</p>
+            </div>
+    
+            <!-- Center: Navigation Links -->
+            <div class="flex space-x-6">
+                <a href="#" class="text-gray-400 hover:text-yellow-300 transition">Home</a>
+                <a href="#" class="text-gray-400 hover:text-yellow-300 transition">About Us</a>
+                <a href="#" class="text-gray-400 hover:text-yellow-300 transition">Login</a>
+            </div>
+    
+            <!-- Right: Social Media Icons -->
+            <div class="flex space-x-4 mt-6 md:mt-0">
+                <a href="#" class="text-gray-400 hover:text-blue-500 transition">
+                    <i class="fab fa-facebook text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-blue-300 transition">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-red-500 transition">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Copyright Section -->
+        <div class="text-center text-gray-500 text-sm mt-6">
+            © 2025 DesignX. All Rights Reserved.
+        </div>
+    </footer>
+    
+  </body>
 </html>
